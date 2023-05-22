@@ -1,5 +1,5 @@
 {
-  "name": "msd",
+  "name": "msd-react-native",
   "version": "0.1.0",
   "description": "test",
   "main": "lib/commonjs/index",
@@ -40,19 +40,19 @@
     "ios",
     "android"
   ],
-  "repository": "https://github.com/abhay-keyvalue/msd",
-  "author": "Abhay <abhay@keyvalue.systems> (https://github.com/abhay-keyvalue)",
+  "repository": "https://github.com/abhay-keyvalue/msd-react-native",
+  "author": "msd <abhay@keyvalue.systems> (https://github.com/abhay-keyvalue)",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/abhay-keyvalue/msd/issues"
+    "url": "https://github.com/abhay-keyvalue/msd-react-native/issues"
   },
-  "homepage": "https://github.com/abhay-keyvalue/msd#readme",
+  "homepage": "https://github.com/abhay-keyvalue/msd-react-native#readme",
   "publishConfig": {
     "registry": "https://registry.npmjs.org/"
   },
   "devDependencies": {
-    "@evilmartians/lefthook": "^1.2.2",
     "@commitlint/config-conventional": "^17.0.2",
+    "@evilmartians/lefthook": "^1.2.2",
     "@react-native-community/eslint-config": "^3.0.2",
     "@release-it/conventional-changelog": "^5.0.0",
     "@types/jest": "^28.1.2",
@@ -67,7 +67,7 @@
     "pod-install": "^0.1.0",
     "prettier": "^2.0.5",
     "react": "18.2.0",
-    "react-native": "0.71.8",
+    "react-native": "0.71.7",
     "react-native-builder-bob": "^0.20.0",
     "release-it": "^15.0.0",
     "typescript": "^4.5.2"
@@ -142,18 +142,7 @@
     "trailingComma": "es5",
     "useTabs": false
   },
-  "react-native-builder-bob": {
-    "source": "src",
-    "output": "lib",
-    "targets": [
-      "commonjs",
-      "module",
-      [
-        "typescript",
-        {
-          "project": "tsconfig.build.json"
-        }
-      ]
-    ]
+  "dependencies": {
+    "@react-native-async-storage/async-storage": "^1.18.1"
   }
 }

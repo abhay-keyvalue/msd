@@ -1,22 +1,59 @@
-# msd
+# msd-react-native
 
 msd
 
 ## Installation
 
 ```sh
-npm install msd
+npm install msd-react-native
 ```
 
 ## Usage
 
 ```js
-import { multiply } from 'msd';
+import MSD from 'msd-react-native';
 
 // ...
 
-const result = await multiply(3, 7);
+i// sdk initialization
+
+const {init} = MSD();
+
+//... 
+
+const apiKey ='sample api key';
+init(apiKey)
+
+//...
+
+
+// use event track function
+
+const {useEvents} = MSD();
+
+//...
+
+const {track} useEvents();
+
+//...
+
+const eventName = 'some Event name';
+const eventProperties = {propertyOne: 'someValue', propertyTwo: 'someValue'}
+track(eventName, eventProperties);
+
+// use recommendations function
+
+const {useRecommendations} = MSD();
+
+const {recommendations, getRecommendations} = useRecommendations();
+
+// ...
+
+const requestParams = {paramOne: 'someValue', paramTwo: 'someValue'};
+getRecommendations(requestParams);
+// get the response as recommendations object
 ```
+
 
 ## Contributing
 
