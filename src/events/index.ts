@@ -1,5 +1,5 @@
-import { apiCall } from 'src/api';
-import { getFromStorage } from 'src/utils/storage';
+import { apiCall } from '../api';
+import { getFromStorage } from '../utils/storage';
 
 export const useEvents = () => {
   const track = async (eventName: string, params: object) => {
