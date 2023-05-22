@@ -1,6 +1,6 @@
 import { useState } from 'react';
-import { apiCall } from 'src/api';
-import { getFromStorage } from 'src/utils/storage';
+import { apiCall } from '../api';
+import { getFromStorage } from '../utils/storage';
 
 export const useRecommendations = () => {
   const [recommendations, setRecommendations] = useState<object>({});
